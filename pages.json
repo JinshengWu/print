@@ -1,0 +1,130 @@
+{
+	// "condition": { //模式配置，仅开发期间生效
+	// 	"current": 0, //当前激活的模式(list 的索引项)
+	// 	"list": [{
+	// 		"name": "test", //模式名称
+	// 		"path": "pages/componentsA/test/test", //启动页面，必选
+	// 		"query": "" //启动参数，在页面的onLoad函数里面得到
+	// 	}]
+	// },
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/login/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/nfcreader/nfcreader",
+			"style": {
+				"navigationBarTitleText": "校园核酸检测信息管理系统",
+				"app-plus": {
+					"bounce": "vertical",
+					"titleNView": {
+						"buttons": [{
+							"text": "\ue534",
+							"fontSrc": "/static/uni.ttf",
+							"fontSize": "22px",
+							"color": "#FFFFFF"
+						}]
+					}
+				}
+			}
+		}, {
+			"path": "pages/realtime/realtime",
+			"style": {
+				"navigationBarTitleText": "校园核酸检测信息管理系统",
+				"app-plus": {
+					"bounce": "vertical",
+					"titleNView": {
+						"buttons": [{
+							"text": "\ue534",
+							"fontSrc": "/static/uni.ttf",
+							"fontSize": "22px",
+							"color": "#FFFFFF"
+						}]
+					}
+				}
+			}
+		}, {
+			"path": "pages/history/history",
+			"style": {
+				"navigationBarTitleText": "校园核酸检测信息管理系统",
+				
+				"app-plus": {
+					"bounce": "vertical",
+					"titleNView": {
+						"buttons": [{
+							"text": "\ue534",
+							"fontSrc": "/static/uni.ttf",
+							"fontSize": "22px",
+							"color": "#FFFFFF"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/personSetting/personSetting",
+			"style": {
+				"navigationBarTitleText": "校园全员核酸检测数据采集系统",
+				"app-plus": {
+					"bounce": "vertical",
+					"titleNView": {
+						"buttons": [{
+							"text": "\ue534",
+							"fontSrc": "/static/uni.ttf",
+							"fontSize": "22px",
+							"color": "#FFFFFF"
+						}]
+					}
+				}
+			}
+		}
+    ],
+
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uView",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#007AFF",
+		"borderStyle": "black",
+		"backgroundColor": "#F8F8F8",
+		"spacing": "-4px",
+		"list": [{
+				"pagePath": "pages/nfcreader/nfcreader",
+				"iconPath": "static/images/nfc_gray.png",
+				"selectedIconPath": "static/images/nfc.png",
+				"text": "NFC刷卡"
+			}, {
+				"pagePath": "pages/realtime/realtime",
+				"iconPath": "static/images/iot_gray.png",
+				"selectedIconPath": "static/images/iot_blue.png",
+				"text": "实时数据"
+			},
+			// {
+			// 	"pagePath": "pages/realtime/realtime-a",
+			// 	"iconPath": "static/images/iot_gray.png",
+			// 	"selectedIconPath": "static/images/iot_blue.png",
+			// 	"text": "实时数据"
+			// },
+			{
+				"pagePath": "pages/history/history",
+				"iconPath": "static/images/graph_gray.png",
+				"selectedIconPath": "static/images/graph_blue.png",
+				"text": "列表查询"
+			},
+			{
+				"pagePath": "pages/personSetting/personSetting",
+				"iconPath": "static/images/setting_gray.png",
+				"selectedIconPath": "static/images/setting_blue.png",
+				"text": "信息修改"
+			}
+
+		]
+	}
+}
